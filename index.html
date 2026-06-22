@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f9f9f9;
+      margin: 0;
+    }
+    .spinner {
+      border: 8px solid #eee;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <script>
+    const REDIRECT_URL = "https://steakking.sharepoint.com/:f:/s/SteakKingSchedules/IgBGj-xC_fDpSrB_KRDBsrk5AUIG6mLKcQUTkpDcF4mwFuw";
+
+    setTimeout(function() {
+      window.location.href = REDIRECT_URL;
+    }, 500); // 500 milliseconds delay
+  </script>
+</head>
+<body>
+  <div class="spinner"></div>
+</body>
+</html>
